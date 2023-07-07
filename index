@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+
+    <script>
+        $(document).ready(function() {
+            
+            $('button').click(function() {
+                $('h1').text('Button clicked!');
+            });
+
+            // Show an alert message when hovering over the heading
+            $('h1').hover(function() {
+                alert('Hovered over the heading!');
+            });
+        });
+    </script>
+
+    <button>Click me</button>
+</body>
+</html>
