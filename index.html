@@ -1,26 +1,150 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello, Hello, World!</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); 
+
+    body {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+  
+
+    .task {
+      position: fixed;
+      top: 0;
+      right: 0; 
+      width: 50%; 
+      height: 100% ;
+      background: linear-gradient(to bottom, #344054 8%, #f1f1f1 30px);      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+    }
+
+   
+    
+    .task-content {
+      text-align: center;
+    }
+    
+    .half-text {
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #344054;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    width: 490px;
+    height: 360px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 180px;
+    letter-spacing: -0.035em;
+    position: fixed;
+    bottom: -30%; 
+    left: 20%; 
+    transform: translateX(-50%); 
+    text-align: right;
+    color: rgb(221, 218, 23);
+  }
+  h1 {
+    font-family: Inter;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 90px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    color: white;
+    margin-bottom: 250px
+  }
+    
+    .remove-button {
+      font-size: 18px;
+    padding: 10px 150px;
+    border-radius: 33px;
+    background-color: #344054;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-65%, -65%);
+    color: white;
+  }
+    
+
+
+
+  
+  </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+  <div class="half-text">
+    
 
-    <script>
-        $(document).ready(function() {
-            
-            $('button').click(function() {
-                $('h1').text('Button clicked!');
-            });
 
-            // Show an alert message when hovering over the heading
-            $('h1').hover(function() {
-                alert('Hovered over the heading!');
-            });
-        });
-    </script>
 
-    <button>Click me</button>
+  </div>
+  <div class="task">
+    <div class="task-buttons">
+
+      <button class="remove-button">Editing</button>
+    </div>
+    <div class="task-content">
+      <h2>Booking  Movie  Tickets</h2>
+      <div class="additional-buttons">
+     
+
+
+    </div>
+  </div>
 </body>
 </html>
+
+<body>
+   
+      
+      <div class="half-text">
+        
+        <h1>
+            Futuristic <br>
+            Todo Lists
+        </h1> 
+
+        <p> Free for personal and commercial use<p>
+          
+            
+          <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 0 50 C 25 25, 75 75, 100 50" fill="none" stroke="yellow" stroke-width="2" />
+          </svg>  
+
+          <svg width="100%" height="-100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 0 20 C 25 25, 75 75, 50 50" fill="none" stroke="yellow" stroke-width="2" />
+          </svg>   
+
+          </div>
+         
+      </div>
+    </div>
+  </body>
+  
