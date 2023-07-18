@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <html>
 <head>
   <meta charset="UTF-8">
@@ -36,7 +37,18 @@
       
     }
 
-   
+
+    .sign-up-button {
+      position: fixed;
+      bottom: 450px;
+      right: 20px;
+      padding: 5px 12px;
+      background-color: #e1e5ec;
+      color: rgb(25, 24, 24);
+      font-size: 15px;
+      border-radius: 80px;
+      cursor: pointer;
+    }
     
     .task-content {
       text-align: center;
@@ -102,8 +114,6 @@
   <div class="half-text">
     
 
-
-
   </div>
   <div class="task">
     <div class="task-buttons">
@@ -115,7 +125,13 @@
       <div class="additional-buttons">
      <pre id="json-data"></pre> 
   
-     
+    </div>
+    <button class="sign-up-button">Sign Up</button>
+    <button id="sign-up-button" class="sign-up-button">Sign Up</button>
+
+  </body>
+
+  
 
 
     </div>
@@ -178,8 +194,18 @@
                     listItem.append(icon);
                     listItem.append(taskName);
                     $("#json-data").append(listItem);
+                    
                 });
             });
         });
+        
     </script>
 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById("sign-up-button").addEventListener("click", function() {
+    window.location.href = "sign.html";
+  });
+</script>
+</body>
+</html>
